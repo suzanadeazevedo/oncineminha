@@ -3,8 +3,11 @@ import Title from "@/components/Title";
 import CardFilm from "@/components/CardFilm";
 
 async function carregarFilmes() {
-  const url =
-    "https://api.themoviedb.org/3/trending/movie/week?api_key=9545c00d7e284a24a59f0c35a5ef51ee&language=pt-BR";
+  const apiKey = process.env.TMDB_API_KEY;
+  if (!apiKey) {
+    throw new Error("TMDB_API_KEY não definida. Adicione em .env.local");
+  }
+  const url = `https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=pt-BR`;
   const resposta = await fetch(url);
   const json = await resposta.json();
   return json.results;
