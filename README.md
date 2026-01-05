@@ -1,10 +1,10 @@
-🎬 Projeto – OnCineminha : Filmes em Alta (SPA)
+##🎬 Projeto – OnCineminha : Filmes em Alta (SPA)
 
 Este projeto consiste em uma Single Page Application (SPA) desenvolvida com React e Next.js, criada com o objetivo de estudo e prática de desenvolvimento front-end moderno.
 
 A aplicação realiza o consumo da API do The Movie Database (TMDB) para exibição dinâmica dos filmes em alta, além de contar com páginas de cadastro e informações sobre o projeto.
 
-🚀 Tecnologias utilizadas
+##🚀 Tecnologias utilizadas
 
 React
 
@@ -17,7 +17,7 @@ API do The Movie Database (TMDB)
 ## 🔗 Demonstração
 Acesse a aplicação:  https://oncineminha-ztgl.vercel.app/
 
-🎯 Objetivos do projeto
+##🎯 Objetivos do projeto
 
 Praticar componentização em React
 
