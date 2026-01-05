@@ -6,7 +6,8 @@ import { useFavorito } from "@/hooks/useFavorito";
 import { useEffect } from "react";
 
 export default function CardFilm({ filme }) {
-  const { titulo, nota, poster } = filme;
+  const { title, vote_average, poster_path } = filme;
+  const poster_url = `https://image.tmdb.org/t/p/w200${poster_path}`;
   const { favorito, favoritar, desfavoritar, carregarDados } =
     useFavorito(filme);
 
@@ -25,11 +26,13 @@ export default function CardFilm({ filme }) {
           onClick={favoritar}
         />
       )}
-      <img className="rounded" src={poster} alt="Poster do Filme" />
-      <span className="text-center line-clamp-1">{titulo}</span>
+      <img className="rounded" src={poster_url} alt="Poster do Filme" />
+      <span className="text-center line-clamp-1 font-bold">{title}</span>
       <div className="flex gap-1 items-center ">
         <Star color="#ffc800" size={18} />
-        <span className="text-zinc-500 text-center">{nota.toFixed(1)}</span>
+        <span className="text-zinc-500 text-center">
+          {vote_average.toFixed(1)}
+        </span>
       </div>
       <a
         href="#"
