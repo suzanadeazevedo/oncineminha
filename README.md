@@ -14,6 +14,9 @@ Tailwind CSS
 
 API do The Movie Database (TMDB)
 
+## 🔗 Demonstração
+Acesse a aplicação:  https://oncineminha-ztgl.vercel.app/
+
 🎯 Objetivos do projeto
 
 Praticar componentização em React
