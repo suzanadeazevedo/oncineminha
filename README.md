@@ -10,6 +10,8 @@ React
 
 Next.js
 
+Tailwind CSS
+
 API do The Movie Database (TMDB)
 
 🎯 Objetivos do projeto
